@@ -1,0 +1,12 @@
+.card:hover {
+    transform: translateY(-0.30rem) !important;
+    border: 3px solid rgba(167, 32, 97, 0.596);
+    cursor: pointer;
+}
+
+.card:hover .card-footer{
+    background-color: rgba(150, 107, 16, 0.596);
+    margin: 0;
+    color: rgb(250, 248, 241);
+    font-size: larger;
+}

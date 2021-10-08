@@ -15,64 +15,54 @@
         </div>
       </nav> 
       <!--Title-->
-      <div class="h1 text-warning p-4 w-50 font-weight-bolder mx-auto text-center"
+      <div class="h1 text-warning p-4 w-50 font-weight-bolder mx-auto text-center Jumbotron-title"
            style="background-color: rgba(17, 16, 16, 0.322);"
       >
         eCommerce Fashion House
       </div>
       <div class="text-light text-center h4 text-uppercase mx-5">
-        Elegant   .  Modest . Beautiful   
+        Elegant . Modest . Beautiful   
       </div>
     </div>
     <!--end of Jumbotron-->
   
     <!--Categories section-->
     <div class="container p-2 text-center">
-      <div class="h4 p-0 text-monospace text-uppercase">
+      <div class="h4 p-0 text-monospace text-warning py-3">
         Categories
       </div>
-      <div class="row">
-        <div class="col-3">
-          <div class="card category-btn btn border-secondary text-light shadow-lg font-weight-bold py-3 border-bottom-warning"
-            style="background-image: url(../assets/imgs/bg2.png); background-repeat: no-repeat; background-size: cover; background-position: bottom;"
-          >
-            ALL
-          </div>
+      <div class="card-container">
+        <div class="card text-uppercase font-weight-bolder text-light category-btn category-selected">
+          All
         </div>
-        <div class="col-3">
-          <div class="card category-btn btn shadow-lg font-weight-bold py-3">
-            ABAYA
-          </div>
+        <div class="card text-uppercase font-weight-bolder text-light category-btn">
+          Ankara
         </div>
-        <div class="col-3">
-          <div class="card category-btn btn  shadow-lg font-weight-bold py-3">
-            ANKARA
-          </div>
+        <div class="card text-uppercase font-weight-bolder text-light category-btn">
+          Abaya
         </div>
-        <div class="col-3">
-          <div class="card category-btn btn  shadow-lg font-weight-bold py-3">
-            CORPORATE
-          </div>
+        <div class="card text-uppercase font-weight-bolder text-light category-btn">
+          Corporate
         </div>
       </div>
-  
     </div>
-  
-    <!--Product showcase section-->
-    <section>
-      <!--Title-->
-      <div class="h3 text-grey-900 text-capitalize py-4 mx-5">
-        Showing <span class="border-bottom-secondary font-weight-bold ">ALL</span>
+
+    <!--Products Display section-->
+    <div class="container-fluid">
+      <div class="h5 p-0 py-3 text-muted text-gray-800">
+        Showing results for 
+        <span class="text-uppercase border-bottom-warning font-weight-bold border-bottom-secondary">All</span>
       </div>
-      <!--Product showcase-->
       <div class="row">
-        <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-xs-6">
-          <app-product-card routerLink="/productDetails"></app-product-card>
+        <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-xs-6 text-center mx-auto">
+      
+      
+          <app-product-card
+            name="test"
+            price="45"
+            imgUrl="../../../assets/imgs/abaya8.png"
+          ></app-product-card>
         </div>
-        <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-xs-6">
-          <app-product-card></app-product-card>
-        </div>
-  
-      </div>    
-    </section>
+      </div>
+    </div>
   </div>

@@ -1,0 +1,36 @@
+{
+    "products": [
+      {
+        "id": "1",
+        "name": "Kimono Abaya",
+        "details": "Lorem ndjknjskndknjdsnjknskjnfdjnfdsknfsdnjkdnfjdfnjdsnfjdsnnfdsjnfjndsjnfjddnjdndksnknjnfjdnfjkdsnjnfkjnsdjfn.",
+        "price": 999,
+        "cart": "False",
+        "img": "../../../assets/imgs/abaya1.jpg"
+      },
+      {
+        "id": "2",
+        "name": "Crop-top Style Abaya",
+        "details": "Lorem ndjknjskndknjdsnjknskjnfdjnfdsknfsdnjkdnfjdfnjdsnfjdsnnfdsjnfjndsjnfjddnjdndksnknjnfjdnfjkdsnjnfkjnsdjfn.",
+        "price": 223,
+        "cart": "False",
+        "img": "../../../assets/imgs/abaya2.jpg"      
+      },
+      {
+        "id": "3",
+        "name": "Turkish Snow white",
+        "details": "Lorem ndjknjskndknjdsnjknskjnfdjnfdsknfsdnjkdnfjdfnjdsnfjdsnnfdsjnfjndsjnfjddnjdndksnknjnfjdnfjkdsnjnfkjnsdjfn.",
+        "price": 123,
+        "cart": "False",
+        "img": "../../../assets/imgs/abaya3.jpg"      
+      },
+      {
+        "id": "4",
+        "name": "Double Umbrella sleeve",
+        "details": "Lorem ndjknjskndknjdsnjknskjnfdjnfdsknfsdnjkdnfjdfnjdsnfjdsnnfdsjnfjndsjnfjddnjdndksnknjnfjdnfjkdsnjnfkjnsdjfn.",
+        "price": 123,
+        "cart": "False",
+        "img": "../../../assets/imgs/abaya3.jpg"      
+      }    
+    ]
+  }
