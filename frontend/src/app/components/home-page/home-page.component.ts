@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Product } from 'src/app/shared/product-model';
 import { RestApiService } from 'src/app/shared/rest-api.service';
 
+
 @Component({
   selector: 'app-home-page',
   templateUrl: './home-page.component.html',

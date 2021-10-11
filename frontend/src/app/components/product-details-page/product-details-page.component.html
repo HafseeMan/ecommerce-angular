@@ -1,22 +1,25 @@
 <div class="container text-center h-100">
-    <div class="row mx-auto text-center my-5" >
+    <div class="row mx-auto text-center img-container my-5" >
         <div class="col-7 shadow-lg border my-5 shadow-sm"
-            style="background-image: url(../../../assets/imgs/abaya8.png);
-                   background-repeat: no-repeat;
-                   background-size: cover;
-                   background-position: center;
-                   min-height: 600px;
-                   "
+             [ngStyle]= "{'background-image': '../../../'+ productData.img}"     
+                     
         > 
         </div>
         <div class="col-5 card m-0 p-0 shadow-lg border shadow-sm" style="min-height: 600px;">
             <div class="card-header text-center py-4">
-                Product Name : <br><span class="border-bottom-secondary font-weight-bold h2 text-uppercase">Abaya xys</span> 
+                {{productData | json}}
+                
+                Product Name : <br>
+                <span class="border-bottom-secondary font-weight-bold h2 text-capitalize">
+                    {{productData.name}}
+                </span> 
             </div>
             <div class="card-body py-4 h5 text-muted" >
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde, reprehenderit quis esse vel quo consequatur atque! Voluptates cupiditate quasi adipisci.
+                {{productData.details}}
                 <div  class="border bg-light w-75 mx-auto my-4 shadow-sm h3 p-2 text-dark">
-                 N <span class="font-weight-bold h2 text-danger">999.9</span>
+                 N <span class="font-weight-bold h2 text-danger">
+                    {{productData.price}}
+                    </span>
                 </div>
             </div>
             <div class="card-footer p-0">

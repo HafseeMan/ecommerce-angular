@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { HttpClientModule } from '@angular/common/http'
+ 
 import { FlexLayoutModule } from '@angular/flex-layout';
 import {MatCardModule} from '@angular/material/card'
 
@@ -22,6 +23,7 @@ import { ProductDetailsPageComponent } from './components/product-details-page/p
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     FlexLayoutModule,
