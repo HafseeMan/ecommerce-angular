@@ -1,14 +1,11 @@
 <div class="container text-center h-100">
-    <div class="row mx-auto text-center img-container my-5" >
-        <div class="col-7 shadow-lg border my-5 shadow-sm"
-             [ngStyle]= "{'background-image': '../../../'+ productData.img}"     
-                     
-        > 
-        </div>
+    <div class="row mx-auto text-center  my-5" >
+        <div class="col-7 shadow-lg border img-container my-5 shadow-sm"
+        >
+        <img [src] = "productData.img">
+        </div> 
         <div class="col-5 card m-0 p-0 shadow-lg border shadow-sm" style="min-height: 600px;">
             <div class="card-header text-center py-4">
-                {{productData | json}}
-                
                 Product Name : <br>
                 <span class="border-bottom-secondary font-weight-bold h2 text-capitalize">
                     {{productData.name}}
@@ -33,6 +30,6 @@
                 </div>
             </div>
         </div>
-    </div>
 
+    </div>
 </div>  
