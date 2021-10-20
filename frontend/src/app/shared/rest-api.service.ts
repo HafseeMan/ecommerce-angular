@@ -23,8 +23,8 @@ export class RestApiService {
       'Content-Type': 'application/json'
     })
   }  
-
-  // HttpClient API get() method => Fetch employees list
+/******** ACTIONS WITH PRODUCT LIST  *******************************************************************************************/
+  // HttpClient API Fetch Products
   getProducts(): Observable<Product> {
     return this.http.get<Product>(this.apiURL + '/products')
     .pipe(
@@ -33,7 +33,7 @@ export class RestApiService {
     )
   }
 
-  // HttpClient API get() method => Fetch employee
+  // HttpClient API Fetch Product
   getProduct(id: number): Observable<Product> {
     return this.http.get<Product>(this.apiURL + '/products/' + id)
     .pipe(
@@ -41,6 +41,30 @@ export class RestApiService {
       catchError(this.handleError)
     )
   }  
+
+/******** ACTIONS WITH CART LIST  *******************************************************************************************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   // Error handling 
   handleError(error : any) {
     let errorMessage = '';

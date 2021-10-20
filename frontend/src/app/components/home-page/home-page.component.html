@@ -32,16 +32,24 @@
         Categories
       </div>
       <div class="card-container">
-        <div class="card text-uppercase font-weight-bolder text-light category-btn category-selected">
+        <div class="card text-uppercase font-weight-bolder text-light category-btn category-selected"
+            (click)= "changeCategory('all')"
+        >
           All
         </div>
-        <div class="card text-uppercase font-weight-bolder text-light category-btn">
+        <div class="card text-uppercase font-weight-bolder text-light category-btn"
+             (click)= "changeCategory('ankara')"
+        >
           Ankara
         </div>
-        <div class="card text-uppercase font-weight-bolder text-light category-btn">
+        <div class="card text-uppercase font-weight-bolder text-light category-btn"
+            (click)= "changeCategory('abaya')"
+        >
           Abaya
         </div>
-        <div class="card text-uppercase font-weight-bolder text-light category-btn">
+        <div class="card text-uppercase font-weight-bolder text-light category-btn"
+            (click)= "changeCategory('corporate')"
+        >
           Corporate
         </div>
       </div>
@@ -51,17 +59,29 @@
     <div class="container-fluid">
       <div class="h5 p-0 py-3 text-muted text-gray-800">
         Showing results for 
-        <span class="text-uppercase border-bottom-warning font-weight-bold border-bottom-secondary">All</span>
+        <span class="text-uppercase border-bottom-warning font-weight-bold border-bottom-secondary">
+          {{ selectedCategory }}
+        </span>
       </div>
       <div class="row">
         <div *ngIf="Products.length == 0">
           <p> There are no products under this category </p>
         </div>
-        <div *ngFor="let product of Products" 
+        <div *ngFor="let product of Products"
               class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-xs-6 text-center mx-auto"
               routerLink="/product-details/{{product.id}}"
               >
-          <app-product-card
+          <!--To display all-->
+          <app-product-card              
+          *ngIf="selectedCategory === 'all'"
+          [name]="product.name"
+          [price]="product.price"
+          [imgUrl]="product.img"
+          ></app-product-card>
+
+          <!--To display flitered-->
+          <app-product-card              
+            *ngIf="product.category === selectedCategory"
             [name]="product.name"
             [price]="product.price"
             [imgUrl]="product.img"

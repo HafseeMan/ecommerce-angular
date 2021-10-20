@@ -27,4 +27,10 @@ export class HomePageComponent implements OnInit {
     })
   }
 
+  selectedCategory = "all"
+  default = true
+
+  changeCategory(pick : string){
+    this.selectedCategory =  pick
+  }
 }
