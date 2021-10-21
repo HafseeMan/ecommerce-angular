@@ -3,6 +3,7 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Product } from './product-model';
 import { Observable, throwError } from 'rxjs';
 import { retry, catchError } from 'rxjs/operators';
+import { Item } from './item-model';
 
 @Injectable({
   providedIn: 'root'
@@ -43,6 +44,24 @@ export class RestApiService {
   }  
 
 /******** ACTIONS WITH CART LIST  *******************************************************************************************/
+  // HttpClient API Fetch Cart Items
+  loadCartItems(): Observable<Item> {
+    return this.http.get<Item>(this.apiURL + '/cart')
+    .pipe(
+      retry(1),
+      catchError(this.handleError)
+    ) 
+  }
+  // HttpClient API Add Cart Item
+  addCartItem(item: Item): Observable<Item> {
+    return this.http.post<Item>(this.apiURL + '/cart', JSON.stringify(item))
+    .pipe(
+      retry(1),
+      catchError(this.handleError)
+    )    
+  
+  }
+
 
 
 

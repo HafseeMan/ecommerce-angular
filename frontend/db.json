@@ -2,11 +2,9 @@
   {
     "id": "1",
     "name": "Kimono Abaya",
-    "details": "Lorem ndjknjskndknjdsnjknskjnfdjnfdsknfsdnjkdnfjdfnjdsnfjdsnnfdsjnfjndsjnfjddnjdndksnknjnfjdnfjkdsnjnfkjnsdjfn.",
     "price": 999,
-    "cart": "False",
     "img": "./assets/imgs/abaya1.png",
-    "category":"abaya"
+    "qnty": 1
   }
 ],
 

@@ -8,9 +8,13 @@
                 MY CART
             </div>
             <div class="p-2" style="height: 450px;">
-                <div class="h3 text-monospace p-2 text-gray-500">Your cart is empty </div>
-                <table class="table text-center text-uppercase"
+                <!--Show when cart is empty-->
+                <div *ngIf="Cart.length == 0" class="h3 text-monospace p-2 text-gray-500">Your cart is empty </div>
+                
+                <!--Show when cart is not empty-->
+                <table *ngIf="Cart.length !== 0" class="table text-center text-uppercase"
                 >
+                <!--Table headings-->
                     <tr>
                         <th>#</th>
                         <th>ITEM</th>
@@ -18,12 +22,13 @@
                         <th>QNTY</th>
                         <th></th>
                     </tr>
-                    <tr>
-                        <td>1</td>
-                        <td>hi</td>
-                        <td>999.9</td>
+                    <tr *ngFor="let item of Cart">
+                        <td>{{item.id}}</td>
+                        <td>{{item.name}}</td>
+                        <td>{{item.price}}</td>
                         <td>
-                            <input class="form-control text-center mx-auto" type="number" value="1"/>
+                            <input class="form-control text-center mx-auto" type="number" [value]="item.qnty"/>
+
                         </td>
                         <td class="text-danger">
                             <div class="btn btn-outline-danger">delete</div>
@@ -32,6 +37,7 @@
                 </table>
             </div>
             <div>
+                <div class="text-uppercase h4">Total price : 0</div>
                 <div class="btn btn-outline-success mx-2" routerLink="/home">GO BACK TO SHOPPING</div>
                 <div class="btn btn-outline-warning mx-2">CHECK OUT</div>
             </div>
