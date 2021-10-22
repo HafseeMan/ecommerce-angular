@@ -23,11 +23,22 @@
                 <div class="btn w-50 btn-outline-dark float-left"
                      routerLink = "/home"
                 >
-                    Back
+                   Back
                 </div>
-                <div class="btn w-50 category-btn float-right">
+                <button class="btn w-50 category-btn float-right"
+                    (click)="addToCart()"
+                    [class.d-none] = "!cartStatus"
+
+                    >
                     Add to Cart
-                </div>
+                </button>
+                <button class="btn w-50 category-btn float-right"
+                [class.d-none] = "cartStatus"
+                [disabled]
+                style="cursor:auto !important;"
+                >
+                Added to cart
+            </button>
             </div>
         </div>
 

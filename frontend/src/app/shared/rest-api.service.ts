@@ -54,17 +54,30 @@ export class RestApiService {
   }
   // HttpClient API Add Cart Item
   addCartItem(item: Item): Observable<Item> {
-    return this.http.post<Item>(this.apiURL + '/cart', JSON.stringify(item))
+    return this.http.post<Item>(this.apiURL + '/cart', JSON.stringify(item), this.httpOptions)
     .pipe(
       retry(1),
       catchError(this.handleError)
-    )    
-  
+    )      
   }
 
+    // HttpClient API Add Cart Item
+    deleteCartItem(id: number){
+      return this.http.delete<Item>(this.apiURL + '/cart/' + id, this.httpOptions)
+      .pipe(
+        retry(1),
+        catchError(this.handleError)
+      )
+    }
 
-
-
+    //HttpClient APi Cart Item Update 
+    updateCartItemStatus(id: number , product: Product): Observable<Product>{
+      return this.http.put<Product>(this.apiURL + '/products/' + id, JSON.stringify(product), this.httpOptions)
+      .pipe(
+        retry(1),
+        catchError(this.handleError)
+      )
+    }
 
 
 

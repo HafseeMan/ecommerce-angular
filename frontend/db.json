@@ -1,53 +1,12 @@
-{ "cart": [
-  {
-    "id": "1",
-    "name": "Kimono Abaya",
-    "price": 999,
-    "img": "./assets/imgs/abaya1.png",
-    "qnty": 1
-  }
-],
-
-  "products": [
+{
+  "cart": [
     {
       "id": "1",
       "name": "Kimono Abaya",
-      "details": "Lorem ndjknjskndknjdsnjknskjnfdjnfdsknfsdnjkdnfjdfnjdsnfjdsnnfdsjnfjndsjnfjddnjdndksnknjnfjdnfjkdsnjnfkjnsdjfn.",
       "price": 999,
-      "cart": "False",
       "img": "./assets/imgs/abaya1.png",
-      "category":"abaya"
-    }
-    ,    
-    {
-      "id": "10",
-      "name": "Double Umbrella sleeve",
-      "details": "Lorem ndjknjskndknjdsnjknskjnfdjnfdsknfsdnjkdnfjdfnjdsnfjdsnnfdsjnfjndsjnfjddnjdndksnknjnfjdnfjkdsnjnfkjnsdjfn.",
-      "price": 123,
-      "cart": "False",
-      "img": "./assets/imgs/ankara1.jpg",
-      "category":"ankara"      
+      "qnty": 1
     },
-    {
-      "id": "8",
-      "name": "Double Umbrella sleeve",
-      "details": "Lorem ndjknjskndknjdsnjknskjnfdjnfdsknfsdnjkdnfjdfnjdsnfjdsnnfdsjnfjndsjnfjddnjdndksnknjnfjdnfjkdsnjnfkjnsdjfn.",
-      "price": 123,
-      "cart": "False",
-      "img": "./assets/imgs/abaya8.png",
-      "category":"abaya"      
-    }
-    ,
-    {
-      "id": "22",
-      "name": "Double Umbrella sleeve",
-      "details": "Lorem ndjknjskndknjdsnjknskjnfdjnfdsknfsdnjkdnfjdfnjdsnfjdsnnfdsjnfjndsjnfjddnjdndksnknjnfjdnfjkdsnjnfkjnsdjfn.",
-      "price": 123,
-      "cart": "False",
-      "img": "./assets/imgs/abaya10.jpg",
-      "category":"corporate"      
-    }
-    ,
     {
       "id": "2",
       "name": "Crop-top Style Abaya",
@@ -55,159 +14,214 @@
       "price": 223,
       "cart": "False",
       "img": "./assets/imgs/abaya2.png",
-      "category":"abaya"     
-    }    
-    ,    
+      "category": "abaya"
+    },
+    {
+      "id": "8",
+      "name": "Double Umbrella sleeve",
+      "details": "Lorem ndjknjskndknjdsnjknskjnfdjnfdsknfsdnjkdnfjdfnjdsnfjdsnnfdsjnfjndsjnfjddnjdndksnknjnfjdnfjkdsnjnfkjnsdjfn.",
+      "price": 123,
+      "cart": false,
+      "img": "./assets/imgs/abaya8.png",
+      "category": "abaya"
+    }
+  ],
+  "products": [
+    {
+      "headers": {
+        "normalizedNames": {},
+        "lazyUpdate": null
+      },
+      "id": "1"
+    },
+    {
+      "id": "10",
+      "name": "Double Umbrella sleeve",
+      "details": "Lorem ndjknjskndknjdsnjknskjnfdjnfdsknfsdnjkdnfjdfnjdsnfjdsnnfdsjnfjndsjnfjddnjdndksnknjnfjdnfjkdsnjnfkjnsdjfn.",
+      "price": 123,
+      "cart": false,
+      "img": "./assets/imgs/ankara1.jpg",
+      "category": "ankara"
+    },
+    {
+      "id": "8",
+      "cart": true,
+      "category": "abaya",
+      "details": "Lorem ndjknjskndknjdsnjknskjnfdjnfdsknfsdnjkdnfjdfnjdsnfjdsnnfdsjnfjndsjnfjddnjdndksnknjnfjdnfjkdsnjnfkjnsdjfn.",
+      "img": "./assets/imgs/abaya8.png",
+      "name": "Double Umbrella sleeve",
+      "price": 123
+    },
+    {
+      "id": "22",
+      "cart": true,
+      "category": "corporate",
+      "details": "Lorem ndjknjskndknjdsnjknskjnfdjnfdsknfsdnjkdnfjdfnjdsnfjdsnnfdsjnfjndsjnfjddnjdndksnknjnfjdnfjkdsnjnfkjnsdjfn.",
+      "img": "./assets/imgs/abaya10.jpg",
+      "name": "Double Umbrella sleeve",
+      "price": 123
+    },
+    {
+      "id": "2",
+      "name": "Crop-top Style Abaya",
+      "details": "Lorem ndjknjskndknjdsnjknskjnfdjnfdsknfsdnjkdnfjdfnjdsnfjdsnnfdsjnfjndsjnfjddnjdndksnknjnfjdnfjkdsnjnfkjnsdjfn.",
+      "price": 223,
+      "cart": false,
+      "img": "./assets/imgs/abaya2.png",
+      "category": "abaya"
+    },
     {
       "id": "9",
       "name": "Double Umbrella sleeve",
       "details": "Lorem ndjknjskndknjdsnjknskjnfdjnfdsknfsdnjkdnfjdfnjdsnfjdsnnfdsjnfjndsjnfjddnjdndksnknjnfjdnfjkdsnjnfkjnsdjfn.",
       "price": 123,
-      "cart": "False",
+      "cart": false,
       "img": "./assets/imgs/abaya9.png",
-      "category":"abaya"      
-    },    
+      "category": "abaya"
+    },
     {
       "id": "11",
       "name": "Double Umbrella sleeve",
       "details": "Lorem ndjknjskndknjdsnjknskjnfdjnfdsknfsdnjkdnfjdfnjdsnfjdsnnfdsjnfjndsjnfjddnjdndksnknjnfjdnfjkdsnjnfkjnsdjfn.",
       "price": 123,
-      "cart": "False",
+      "cart": false,
       "img": "./assets/imgs/ankara2.jpg",
-      "category":"ankara"      
+      "category": "ankara"
     },
     {
       "id": "4",
       "name": "Double Umbrella sleeve",
       "details": "Lorem ndjknjskndknjdsnjknskjnfdjnfdsknfsdnjkdnfjdfnjdsnfjdsnnfdsjnfjndsjnfjddnjdndksnknjnfjdnfjkdsnjnfkjnsdjfn.",
       "price": 123,
-      "cart": "False",
+      "cart": false,
       "img": "./assets/imgs/abaya4.png",
-      "category":"abaya"      
-    },    
+      "category": "abaya"
+    },
     {
       "id": "5",
       "name": "Double Umbrella sleeve",
       "details": "Lorem ndjknjskndknjdsnjknskjnfdjnfdsknfsdnjkdnfjdfnjdsnfjdsnnfdsjnfjndsjnfjddnjdndksnknjnfjdnfjkdsnjnfkjnsdjfn.",
       "price": 123,
-      "cart": "False",
+      "cart": false,
       "img": "./assets/imgs/abaya5.png",
-      "category":"abaya"      
-    },    
+      "category": "abaya"
+    },
     {
       "id": "6",
       "name": "Double Umbrella sleeve",
       "details": "Lorem ndjknjskndknjdsnjknskjnfdjnfdsknfsdnjkdnfjdfnjdsnfjdsnnfdsjnfjndsjnfjddnjdndksnknjnfjdnfjkdsnjnfkjnsdjfn.",
       "price": 123,
-      "cart": "False",
+      "cart": false,
       "img": "./assets/imgs/abaya6.png",
-      "category":"abaya"      
-    },    
+      "category": "abaya"
+    },
     {
       "id": "7",
       "name": "Double Umbrella sleeve",
       "details": "Lorem ndjknjskndknjdsnjknskjnfdjnfdsknfsdnjkdnfjdfnjdsnfjdsnnfdsjnfjndsjnfjddnjdndksnknjnfjdnfjkdsnjnfkjnsdjfn.",
       "price": 123,
-      "cart": "False",
+      "cart": false,
       "img": "./assets/imgs/abaya7.png",
-      "category":"abaya"      
-    },        
-      {
+      "category": "abaya"
+    },
+    {
       "id": "12",
       "name": "Double Umbrella sleeve",
       "details": "Lorem ndjknjskndknjdsnjknskjnfdjnfdsknfsdnjkdnfjdfnjdsnfjdsnnfdsjnfjndsjnfjddnjdndksnknjnfjdnfjkdsnjnfkjnsdjfn.",
       "price": 123,
-      "cart": "False",
+      "cart": false,
       "img": "./assets/imgs/ankara3.jpg",
-      "category":"ankara"      
-    },          {
+      "category": "ankara"
+    },
+    {
       "id": "13",
       "name": "Double Umbrella sleeve",
       "details": "Lorem ndjknjskndknjdsnjknskjnfdjnfdsknfsdnjkdnfjdfnjdsnfjdsnnfdsjnfjndsjnfjddnjdndksnknjnfjdnfjkdsnjnfkjnsdjfn.",
       "price": 123,
-      "cart": "False",
+      "cart": false,
       "img": "./assets/imgs/ankara4.jpg",
-      "category":"ankara"      
-    }, 
+      "category": "ankara"
+    },
     {
       "id": "3",
       "name": "Turkish Snow white",
       "details": "Lorem ndjknjskndknjdsnjknskjnfdjnfdsknfsdnjkdnfjdfnjdsnfjdsnnfdsjnfjndsjnfjddnjdndksnknjnfjdnfjkdsnjnfkjnsdjfn.",
       "price": 123,
-      "cart": "False",
+      "cart": false,
       "img": "./assets/imgs/abaya3.png",
-      "category":"abaya"      
+      "category": "abaya"
     },
-       {
+    {
       "id": "14",
       "name": "Double Umbrella sleeve",
       "details": "Lorem ndjknjskndknjdsnjknskjnfdjnfdsknfsdnjkdnfjdfnjdsnfjdsnnfdsjnfjndsjnfjddnjdndksnknjnfjdnfjkdsnjnfkjnsdjfn.",
       "price": 123,
-      "cart": "False",
+      "cart": false,
       "img": "./assets/imgs/ankara5.jpg",
-      "category":"ankara"      
-    },          {
+      "category": "ankara"
+    },
+    {
       "id": "15",
       "name": "Double Umbrella sleeve",
       "details": "Lorem ndjknjskndknjdsnjknskjnfdjnfdsknfsdnjkdnfjdfnjdsnfjdsnnfdsjnfjndsjnfjddnjdndksnknjnfjdnfjkdsnjnfkjnsdjfn.",
       "price": 123,
-      "cart": "False",
+      "cart": false,
       "img": "./assets/imgs/ankara6.jpg",
-      "category":"ankara"      
-    },    
+      "category": "ankara"
+    },
     {
       "id": "16",
       "name": "Double Umbrella sleeve",
       "details": "Lorem ndjknjskndknjdsnjknskjnfdjnfdsknfsdnjkdnfjdfnjdsnfjdsnnfdsjnfjndsjnfjddnjdndksnknjnfjdnfjkdsnjnfkjnsdjfn.",
       "price": 123,
-      "cart": "False",
+      "cart": false,
       "img": "./assets/imgs/ankara7.jpg",
-      "category":"ankara"      
-    },    
+      "category": "ankara"
+    },
     {
       "id": "17",
       "name": "Double Umbrella sleeve",
       "details": "Lorem ndjknjskndknjdsnjknskjnfdjnfdsknfsdnjkdnfjdfnjdsnfjdsnnfdsjnfjndsjnfjddnjdndksnknjnfjdnfjkdsnjnfkjnsdjfn.",
       "price": 123,
-      "cart": "False",
+      "cart": false,
       "img": "./assets/imgs/ankara8.jpg",
-      "category":"ankara"      
-    },    
+      "category": "ankara"
+    },
     {
       "id": "18",
       "name": "Double Umbrella sleeve",
       "details": "Lorem ndjknjskndknjdsnjknskjnfdjnfdsknfsdnjkdnfjdfnjdsnfjdsnnfdsjnfjndsjnfjddnjdndksnknjnfjdnfjkdsnjnfkjnsdjfn.",
       "price": 123,
-      "cart": "False",
+      "cart": false,
       "img": "./assets/imgs/ankara9.png",
-      "category":"ankara"      
-    },    
+      "category": "ankara"
+    },
     {
       "id": "19",
       "name": "Double Umbrella sleeve",
       "details": "Lorem ndjknjskndknjdsnjknskjnfdjnfdsknfsdnjkdnfjdfnjdsnfjdsnnfdsjnfjndsjnfjddnjdndksnknjnfjdnfjkdsnjnfkjnsdjfn.",
       "price": 123,
-      "cart": "False",
+      "cart": false,
       "img": "./assets/imgs/corporate1.png",
-      "category":"corporate"      
-    },    
+      "category": "corporate"
+    },
     {
       "id": "20",
       "name": "Double Umbrella sleeve",
       "details": "Lorem ndjknjskndknjdsnjknskjnfdjnfdsknfsdnjkdnfjdfnjdsnfjdsnnfdsjnfjndsjnfjddnjdndksnknjnfjdnfjkdsnjnfkjnsdjfn.",
       "price": 123,
-      "cart": "False",
+      "cart": false,
       "img": "./assets/imgs/corporate2.png",
-      "category":"corporate"      
+      "category": "corporate"
     },
     {
       "id": "21",
       "name": "Double Umbrella sleeve",
       "details": "Lorem ndjknjskndknjdsnjknskjnfdjnfdsknfsdnjkdnfjdfnjdsnfjdsnnfdsjnfjndsjnfjddnjdndksnknjnfjdnfjkdsnjnfkjnsdjfn.",
       "price": 123,
-      "cart": "False",
+      "cart": false,
       "img": "./assets/imgs/corporate3.jpg",
-      "category":"corporate"      
+      "category": "corporate"
     }
   ]
 }

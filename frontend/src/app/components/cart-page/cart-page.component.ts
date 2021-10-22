@@ -18,19 +18,31 @@ export class CartPageComponent implements OnInit {
 
   ngOnInit(): void {
     this.loadItems()
+    this.calculateTotal()
   }
 
   //Calculate total
-  /*
-  for(i=0; i<Cart.length; i++){
-    
+  calculateTotal(){
+    let total = 0
+    for(let i=0; i<this.Cart.length; i++){
+      total =+ this.Cart[i].price
+      console.log(this.Cart[i].price)
+    }
+    this.total = total
+    console.log(this.total)
   }
-  */
- 
+
   //Load Items to cart
   loadItems() {
     return this.restApi.loadCartItems().subscribe((data: {}) => {
       this.Cart = data;
+    })
+  }
+
+  //Delete Item from Cart
+  deleteItem(id: number) {
+    return this.restApi.deleteCartItem(id).subscribe(data => {
+      this.loadItems()
     })
   }
 

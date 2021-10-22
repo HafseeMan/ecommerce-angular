@@ -2,7 +2,7 @@ export interface Product {
     id: number;
     name: string;
     price: number;
-    imgUrl: string;
+    img: string;
     details: string;
-    inCart: boolean;
+    cart: boolean;
 }

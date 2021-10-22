@@ -31,7 +31,11 @@
 
                         </td>
                         <td class="text-danger">
-                            <div class="btn btn-outline-danger">delete</div>
+                            <div class="btn btn-outline-danger"
+                                 (click)="deleteItem(item.id)"
+                            >
+                            delete
+                            </div>
                         </td>
                     </tr>
                 </table>

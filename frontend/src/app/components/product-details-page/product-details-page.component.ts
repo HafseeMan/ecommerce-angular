@@ -11,6 +11,7 @@ export class ProductDetailsPageComponent implements OnInit {
   
   id = this.actRoute.snapshot.params['id']
   productData: any = {};
+  cartStatus = this.productData.cart
 
   constructor(
     public restApi: RestApiService,
@@ -23,5 +24,30 @@ export class ProductDetailsPageComponent implements OnInit {
       this.productData = data;
     })
   }
+
+  updateCartStatus(){
+  let newData = {id: this.productData.id,
+    cart: true, /*Cart status changed */
+    category: this.productData.category,
+    details: this.productData.details,
+    img: this.productData.img,
+    name: this.productData.name,
+    price: this.productData.price
+  }
+
+   this.restApi.updateCartItemStatus(this.productData.id, newData)
+    .subscribe(data => {
+      this.cartStatus = newData.cart
+      console.log(this.cartStatus)
+    })
+  }
+
+  addToCart(){
+   this.restApi.addCartItem(this.productData).subscribe((data: {}) => {
+     this.updateCartStatus()
+   }) 
+
+  }
+
 
 }
