@@ -26,11 +26,14 @@
                         <td>{{item.id}}</td>
                         <td>{{item.name}}</td>
                         <td>{{item.price}}</td>
-                        <td>
-                            <input class="form-control text-center mx-auto" type="number" [value]="item.qnty"/>
+                        <td><!--On submit if inout field not touched value should set as 1.-->
+                            <input class="form-control text-center mx-auto" 
+                                [(ngModel)]='qntyValue' matInput
+                                (change)="updateItemQnty(item.id, $event.target)"
+                                type="number" [value]="item.qnty" name="qntyValue"/>
 
                         </td>
-                        <td class="text-danger">
+                        <td class="text-danger"> 
                             <div class="btn btn-outline-danger"
                                  (click)="deleteItem(item.id)"
                             >

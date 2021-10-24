@@ -44,7 +44,7 @@ export class RestApiService {
   }  
 
 /******** ACTIONS WITH CART LIST  *******************************************************************************************/
-  // HttpClient API Fetch Cart Items
+// HttpClient API Fetch Cart Items
   loadCartItems(): Observable<Item> {
     return this.http.get<Item>(this.apiURL + '/cart')
     .pipe(
@@ -52,6 +52,16 @@ export class RestApiService {
       catchError(this.handleError)
     ) 
   }
+
+    // HttpClient API Fetch 1 Cart Item
+    getCartItem(id: number): Observable<Item> {
+      return this.http.get<Item>(this.apiURL + '/cart/' + id)
+      .pipe(
+        retry(1),
+        catchError(this.handleError)
+      )
+    }  
+
   // HttpClient API Add Cart Item
   addCartItem(item: Item): Observable<Item> {
     return this.http.post<Item>(this.apiURL + '/cart', JSON.stringify(item), this.httpOptions)
@@ -61,7 +71,7 @@ export class RestApiService {
     )      
   }
 
-    // HttpClient API Add Cart Item
+    // HttpClient API Delete Cart Item
     deleteCartItem(id: number){
       return this.http.delete<Item>(this.apiURL + '/cart/' + id, this.httpOptions)
       .pipe(
@@ -70,8 +80,8 @@ export class RestApiService {
       )
     }
 
-    //HttpClient APi Cart Item Update 
-    updateCartItemStatus(id: number , product: Product): Observable<Product>{
+    //HttpClient API Product Update 
+    updateCartStatus(id: number , product: Product): Observable<Product>{
       return this.http.put<Product>(this.apiURL + '/products/' + id, JSON.stringify(product), this.httpOptions)
       .pipe(
         retry(1),
@@ -80,7 +90,14 @@ export class RestApiService {
     }
 
 
-
+    //HttpClient API Cart Item Update 
+    updateItemQnty(id: number , item: Item): Observable<Item>{
+      return this.http.put<Item>(this.apiURL + '/cart/' + id, JSON.stringify(item), this.httpOptions)
+      .pipe(
+        retry(1),
+        catchError(this.handleError)
+      )
+    }
 
 
 

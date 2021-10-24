@@ -6,24 +6,6 @@
       "price": 999,
       "img": "./assets/imgs/abaya1.png",
       "qnty": 1
-    },
-    {
-      "id": "2",
-      "name": "Crop-top Style Abaya",
-      "details": "Lorem ndjknjskndknjdsnjknskjnfdjnfdsknfsdnjkdnfjdfnjdsnfjdsnnfdsjnfjndsjnfjddnjdndksnknjnfjdnfjkdsnjnfkjnsdjfn.",
-      "price": 223,
-      "cart": "False",
-      "img": "./assets/imgs/abaya2.png",
-      "category": "abaya"
-    },
-    {
-      "id": "8",
-      "name": "Double Umbrella sleeve",
-      "details": "Lorem ndjknjskndknjdsnjknskjnfdjnfdsknfsdnjkdnfjdfnjdsnfjdsnnfdsjnfjndsjnfjddnjdndksnknjnfjdnfjkdsnjnfkjnsdjfn.",
-      "price": 123,
-      "cart": false,
-      "img": "./assets/imgs/abaya8.png",
-      "category": "abaya"
     }
   ],
   "products": [

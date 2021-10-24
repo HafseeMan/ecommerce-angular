@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { RestApiService } from 'src/app/shared/rest-api.service'; 
 import { ActivatedRoute, Router } from '@angular/router';
+import { Item } from 'src/app/shared/item-model';
 
 @Component({
   selector: 'app-product-details-page',
@@ -25,7 +26,7 @@ export class ProductDetailsPageComponent implements OnInit {
     })
   }
 
-  updateCartStatus(){
+  updateCartStatus(){ /**Of original json object*/
   let newData = {id: this.productData.id,
     cart: true, /*Cart status changed */
     category: this.productData.category,
@@ -35,7 +36,7 @@ export class ProductDetailsPageComponent implements OnInit {
     price: this.productData.price
   }
 
-   this.restApi.updateCartItemStatus(this.productData.id, newData)
+   this.restApi.updateCartStatus(this.productData.id, newData)
     .subscribe(data => {
       this.cartStatus = newData.cart
       console.log(this.cartStatus)
@@ -43,8 +44,17 @@ export class ProductDetailsPageComponent implements OnInit {
   }
 
   addToCart(){
-   this.restApi.addCartItem(this.productData).subscribe((data: {}) => {
+    let newCartItem:Item = {
+      id: this.productData.id,
+      name: this.productData.name,
+      price: this.productData.price,
+      img: this.productData.img,
+      qnty: 1
+    }
+
+   this.restApi.addCartItem(newCartItem).subscribe((data: {}) => {
      this.updateCartStatus()
+
    }) 
 
   }
